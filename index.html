@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Select a Class</h1>
+        <div class="class-grid">
+            <button class="class-btn" data-class="UKG">U.K.G</button>
+            <button class="class-btn" data-class="1A">Class - 1A</button>
+            <button class="class-btn" data-class="1B">Class - 1B</button>
+            <button class="class-btn" data-class="2">Class - 2</button>
+            <button class="class-btn" data-class="3">Class - 3</button>
+            <button class="class-btn" data-class="5">Class - 5</button>
+        </div>
+        <div class="past-tasks-container">
+            <button id="past-tasks-btn" class="btn secondary">
+                <i class="fas fa-history"></i> Past Tasks
+            </button>
+        </div>
+    </div>
+    <div id="calendar-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Past Submissions</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                    <h3 id="current-month"></h3>
+                    <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="calendar-grid">
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div id="calendar-days"></div>
+                </div>
+            </div>
+            <div id="submission-details" class="submission-details">
+                <h3>Submission Details</h3>
+                <div id="submission-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

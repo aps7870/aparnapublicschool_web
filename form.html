@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Subject Details - <span id="selected-class"></span></h1>
+        <form id="subject-form">
+            <div class="form-header">
+                <div>Subject</div>
+                <div>Classwork</div>
+                <div>Homework</div>
+            </div>
+            <div id="subject-rows">
+                <!-- Subject rows will be dynamically added here -->
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn primary">Submit</button>
+                <button type="button" id="download-btn" class="btn secondary">Download PDF</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="form.js"></script>
+</body>
+</html> 
